@@ -1,5 +1,4 @@
 # Exercice 4 — Le Deployment de votre site.
-# Remplacez chaque TODO, puis : kubectl apply -f k8s/site/
 # Aide : kubectl explain deployment.spec.template.spec.containers
 apiVersion: apps/v1
 kind: Deployment
