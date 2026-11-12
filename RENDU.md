@@ -38,9 +38,9 @@
 9. Sur quels nœuds se trouvent vos 3 réplicas ? Collez la sortie de `kubectl get pods -l app=site -o wide`.
    ```
    NAME                    READY   STATUS    RESTARTS   AGE   IP          NODE               NOMINATED NODE   READINESS GATES
-site-5cc664db9c-mdprm   1/1     Running   0          24m   10.42.1.6   k3d-lab-agent-1    <none>           <none>
-site-5cc664db9c-pmnrq   1/1     Running   0          24m   10.42.2.6   k3d-lab-server-0   <none>           <none>
-site-5cc664db9c-ztgkg   1/1     Running   0          25m   10.42.0.9   k3d-lab-agent-0    <none>           <none>
+   site-5cc664db9c-mdprm   1/1     Running   0          24m   10.42.1.6   k3d-lab-agent-1    <none>           <none>
+   site-5cc664db9c-pmnrq   1/1     Running   0          24m   10.42.2.6   k3d-lab-server-0   <none>           <none>
+   site-5cc664db9c-ztgkg   1/1     Running   0          25m   10.42.0.9   k3d-lab-agent-0    <none>           <none>
    ```
 10. Avec l'image `nginx:9.99`, quel statut avait le pod ? Quelle commande vous a donné la cause ?
     > Le pod était en `ErrImagePull` puis `ImagePullBackOff`. `kubectl get events` m'a donné la cause : `Failed to pull image "nginx:9.99": not found`.
